@@ -1,0 +1,86 @@
+.nav {
+  width: 100%;
+  height: 145px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.422);
+}
+
+.nav .container__nav {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__nav .nav__logo .logo {
+  width: 300px;
+}
+
+.container__nav .nav__list {
+  position: absolute;
+  width: 100%;
+  top: 145px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 1s ease;
+  background: rgba(0, 0, 0, 0.422);
+}
+
+.nav__list .list__item {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
+.nav .responsive__menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+
+.container__nav .show-menu {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media screen and (min-width: 860px) {
+  .nav {
+    background: transparent;
+  }
+
+  .nav .responsive__menu {
+    display: none;
+  }
+
+  .container__nav .nav__list {
+    position: static;
+    flex-direction: row;
+    clip-path: none;
+    width: auto;
+    background: transparent;
+  }
+
+  .nav__list .list__item {
+    width: auto;
+  }
+}
