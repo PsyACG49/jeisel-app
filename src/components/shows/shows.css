@@ -1,0 +1,20 @@
+.shows {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.shows h2 {
+  margin-bottom: 100px;
+  font-size: 2rem;
+}
+
+.shows__list {
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 561px) {
+  .shows h2 {
+    font-size: 4rem;
+  }
+}
