@@ -15,8 +15,10 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 const Events = () => {
   return (
     <section className="events">
-      <h3 className="section__subtitle">Eventos</h3>
-      <div className="events__slider">
+      <h3 className="section__subtitle" data-aos="zoom-in">
+        Eventos
+      </h3>
+      <div className="events__slider" data-aos="zoom-in">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

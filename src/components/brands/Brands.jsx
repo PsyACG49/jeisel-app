@@ -41,64 +41,62 @@ const Brands = () => {
           <SwiperSlide>
             <img src={BRAND} alt="logotipo de marca patrocinadora" />
           </SwiperSlide>
-          <var>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="img__brand"
-                src={BRAND}
-                alt="logotipo de marca patrocinadora"
-              />
-            </SwiperSlide>
-          </var>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="img__brand"
+              src={BRAND}
+              alt="logotipo de marca patrocinadora"
+            />
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

@@ -84,3 +84,7 @@
     width: auto;
   }
 }
+
+.nav__scroll {
+  background: linear-gradient(180deg, #685333b3 0%, #00000087 100%);
+}

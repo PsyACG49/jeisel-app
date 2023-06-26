@@ -9,6 +9,7 @@
 }
 
 .brands .section__subtitle {
+  font-size: 2rem;
   margin-bottom: 50px;
 }
 
@@ -34,4 +35,10 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+@media screen and (min-width: 561px) {
+  .brands .section__subtitle {
+    font-size: 4rem;
+  }
 }

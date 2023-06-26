@@ -10,7 +10,6 @@ const Show = ({ direction }) => {
         src="https://www.youtube.com/embed/daZUbpYT678?controls=0"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
       ></iframe>
       <div className="show__info">
         <h3 className="info__title">Title Show</h3>

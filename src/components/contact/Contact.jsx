@@ -1,6 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 import "./conatct.css";
 
@@ -12,15 +13,38 @@ const Contact = () => {
           Contactame o visita mis redes sociales:
         </h3>
         <div className="socials__container">
-          <div className="socials__item">
+          <a
+            href="https://www.facebook.com/jeiseltorres"
+            className="socials__item"
+            target="blank"
+            rel="noreferrer"
+          >
             <FaFacebook />
-          </div>
-          <div className="socials__item">
+          </a>
+          <a
+            href="https://www.instagram.com/jeiseltorres"
+            className="socials__item"
+            target="blank"
+            rel="noreferrer"
+          >
             <BiLogoInstagramAlt />
-          </div>
-          <div className="socials__item">
+          </a>
+          <a
+            href="https://www.youtube.com/@JeiselTorres"
+            className="socials__item"
+            target="blank"
+            rel="noreferrer"
+          >
             <AiFillYoutube />
-          </div>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5215514636164"
+            className="socials__item"
+            target="blank"
+            rel="noreferrer"
+          >
+            <IoLogoWhatsapp />
+          </a>
         </div>
       </div>
       <form className="contact__form">
