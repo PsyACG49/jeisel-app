@@ -7,7 +7,7 @@ import "./conatct.css";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact__socials">
         <h3 className="section__subtitle">
           Contactame o visita mis redes sociales:

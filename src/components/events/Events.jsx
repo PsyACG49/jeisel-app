@@ -14,7 +14,7 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const Events = () => {
   return (
-    <section className="events">
+    <section className="events" id="events">
       <h3 className="section__subtitle" data-aos="zoom-in">
         Eventos
       </h3>

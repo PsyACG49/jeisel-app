@@ -36,12 +36,17 @@
   background: rgba(0, 0, 0, 0.422);
 }
 
-.nav__list .list__item {
+.nav__list .list__item a {
   width: 100%;
   padding: 10px 0;
   text-align: center;
   color: var(--color-white);
   font-size: 1.2rem;
+  transition: color 0.5s ease;
+}
+
+.nav__list .list__item a:hover {
+  color: var(--color-primary);
 }
 
 .nav .responsive__menu {

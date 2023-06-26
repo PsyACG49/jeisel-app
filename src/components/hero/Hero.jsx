@@ -5,7 +5,7 @@ import IMG2 from "../../assets/imgs/helps2.png";
 import "./hero.css";
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero__front"></div>
       <div className="hero__graphics">
         <div className="graphics__container">

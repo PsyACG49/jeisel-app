@@ -22,10 +22,18 @@ const Nav = () => {
           <img src={LOGO} alt="logo Jeisel Torres" className="logo" />
         </div>
         <ul className={`nav__list ${showMenu ? "show-menu" : ""}`}>
-          <li className="list__item">Inicio</li>
-          <li className="list__item">Eventos</li>
-          <li className="list__item">Acerca de</li>
-          <li className="list__item">Contacto</li>
+          <li className="list__item">
+            <a href="#hero">Inicio</a>
+          </li>
+          <li className="list__item">
+            <a href="#events">Eventos</a>
+          </li>
+          <li className="list__item">
+            <a href="#about">Acerca de</a>
+          </li>
+          <li className="list__item">
+            <a href="#contact">Contacto</a>
+          </li>
         </ul>
       </div>
       <div className="responsive__menu" onClick={() => setShowMenu(!showMenu)}>
