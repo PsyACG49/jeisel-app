@@ -1,11 +1,39 @@
+import { useRef, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import emailjs from "@emailjs/browser";
+import LOADER from "../../assets/imgs/loader.svg";
 
-import "./conatct.css";
+import "./contact.css";
 
 const Contact = () => {
+  const [loader, setLoader] = useState(false);
+  const [sended, setSended] = useState(false);
+  const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+    emailjs
+      .sendForm(
+        "service_galkvhq",
+        "template_m7dtjuj",
+        form.current,
+        "umkQOemXh0tOjhCPX"
+      )
+      .then((res) => {
+        if (res.status === 200) {
+          setLoader(false);
+          setSended(true);
+          setTimeout(() => {
+            setSended(false);
+          }, 4000);
+        }
+      })
+      .catch((error) => console.log(error));
+    form.current.reset();
+  };
   return (
     <section className="contact" id="contact">
       <div className="contact__socials">
@@ -47,23 +75,30 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <form className="contact__form">
+      <form ref={form} className="contact__form" onSubmit={handleSubmit}>
         <div className="form__input">
           <label htmlFor="name">Nombre :</label>
-          <input type="text" id="name" />
+          <input name="name" type="text" id="name" required />
         </div>
         <div className="form__input">
           <label htmlFor="email">Correo :</label>
-          <input type="email" id="email" />
+          <input name="email" type="email" id="email" required />
         </div>
         <div className="form__input">
           <label htmlFor="message" className="label__textarea">
             Mensaje :
           </label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
         </div>
-
         <button className="form__btn">Enviar</button>
+        {loader && <img src={LOADER} alt="loader de pagina" />}
+        {sended && <p>Mensaje enviado</p>}
       </form>
     </section>
   );
