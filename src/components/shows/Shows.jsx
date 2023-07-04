@@ -1,5 +1,6 @@
 import Show from "../show/Show";
 import "./shows.css";
+import { data } from "./data";
 
 const Shows = () => {
   return (
@@ -7,9 +8,9 @@ const Shows = () => {
       <h2 className="section__subtitle">Algunas presentaciones</h2>
 
       <div className="shows__list">
-        <Show />
-        <Show direction="right" />
-        <Show />
+        <Show data={data[0]} />
+        <Show data={data[1]} direction="right" />
+        <Show data={data[2]} />
       </div>
     </section>
   );

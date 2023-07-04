@@ -29,7 +29,7 @@ const Hero = () => {
         />
       </div>
       <div className="hero__text" data-aos="fade-left">
-        <h1 className="text__title">Jeisél Torres Semblanza</h1>
+        <h1 className="text__title">Jeisél Torres</h1>
         <p className="text__subtitle">
           Cantautor, arreglista, productor y multi-instrumentista.
         </p>
