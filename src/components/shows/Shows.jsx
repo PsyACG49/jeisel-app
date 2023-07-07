@@ -5,7 +5,7 @@ import { data } from "./data";
 const Shows = () => {
   return (
     <section className="shows">
-      <h2 className="section__subtitle">Algunas presentaciones</h2>
+      <h2 className="section__subtitle">Presentaciones</h2>
 
       <div className="shows__list">
         <Show data={data[0]} />

@@ -37,9 +37,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact__socials">
-        <h3 className="section__subtitle">
-          Contactame o visita mis redes sociales:
-        </h3>
+        <h3 className="section__subtitle">Redes sociales:</h3>
         <div className="socials__container">
           <a
             href="https://www.facebook.com/jeiseltorres"
@@ -76,6 +74,7 @@ const Contact = () => {
         </div>
       </div>
       <form ref={form} className="contact__form" onSubmit={handleSubmit}>
+        <h3 className="section__subtitle">Contacto</h3>
         <div className="form__input">
           <label htmlFor="name">Nombre :</label>
           <input name="name" type="text" id="name" required />

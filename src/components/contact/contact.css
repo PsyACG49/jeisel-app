@@ -18,6 +18,10 @@
   max-width: 600px;
 }
 
+.contact__form .section__subtitle {
+  font-size: 3rem;
+  text-align: start;
+}
 .contact__socials .section__subtitle {
   font-size: 3rem;
   text-align: start;

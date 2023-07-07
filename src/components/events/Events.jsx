@@ -2,6 +2,7 @@ import EVENT0 from "../../assets/imgs/eventoJeisel.jpeg";
 import EVENT1 from "../../assets/imgs/evento2.jpg";
 import EVENT2 from "../../assets/imgs/evento1.jpg";
 import EVENT3 from "../../assets/imgs/evento.jpg";
+import EVENT4 from "../../assets/imgs/fla.jpeg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,6 +43,9 @@ const Events = () => {
           pagination={true}
           modules={[Autoplay, EffectCoverflow, Pagination]}
         >
+          <SwiperSlide>
+            <img className="img__gale" src={EVENT4} />
+          </SwiperSlide>
           <SwiperSlide>
             <img src={EVENT0} />
           </SwiperSlide>
